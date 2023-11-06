@@ -74,3 +74,8 @@ $(".time-block").each(function () {
 });
 }
 timerKeeper();
+
+for (let index = 9; index < 18; index++) {
+$('#hour-' + index +' .description').val(localStorage.getItem('hour-'+index));
+  
+}
