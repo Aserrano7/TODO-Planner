@@ -73,9 +73,11 @@ $(".time-block").each(function () {
   }
 });
 }
+// runs the fuction timekeeper
 timerKeeper();
-
+// loops through all time blocks and gets local storage items
+// that way when it reloads everthing is still there
 for (let index = 9; index < 18; index++) {
 $('#hour-' + index +' .description').val(localStorage.getItem('hour-'+index));
-  
+
 }
